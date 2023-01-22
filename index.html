@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gana dinero conduciendo o pide un viaje ahora | Uber España</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg bg-black ps-lg-5 pe-lg-5">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white fs-4 mb-1" href="#">Uber</a>
+
+            <span class="text-end flex-grow-1 flex-lg-grow-0 order-lg-1 order-0">
+                <a class="btn btn-primary bg-black text-white border-0 enlace-menu" data-bs-toggle="collapse" href="#collapseLogin" role="button" aria-expanded="false" aria-controls="collapseLogin">
+                    Iniciar Sesión
+                </a>
+                <a class="btn btn-primary bg-white text-black border-0 enlace-menu--fondo-blanco" data-bs-toggle="collapse" href="#collapseRegister" role="button" aria-expanded="false" aria-controls="collapseRegister">
+                    Registrarse
+                </a>
+            </span>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <button class="btn btn-black text-white dropdown-toggle enlace-menu border-0 eliminar-after ps-0 ps-lg-3" data-bs-toggle="dropdown" aria-expanded="false">
+                            Empresa
+                            <i>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M18 8v3.8l-6 4.6-6-4.6V8l6 4.6L18 8z" fill="currentColor"></path></svg>
+                            </i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-black">
+                            <li><a class="dropdown-item" href="#">Conócenos</a></li>
+                            <li><a class="dropdown-item" href="#">Nuestras Ofertas</a></li>
+                            <li><a class="dropdown-item" href="#">Como funciona Uber</a></li>
+                            <li><a class="dropdown-item" href="#">Ciudadanía global</a></li>
+                            <li><a class="dropdown-item" href="#">Newsroon</a></li>
+                            <li><a class="dropdown-item" href="#">Relaciones con los inversores</a></li>
+                            <li><a class="dropdown-item" href="#">Blog</a></li>
+                            <li><a class="dropdown-item" href="#">Unete al equipo</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white enlace-menu" href="#">Seguridad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white enlace-menu" href="#">Ayuda</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white d-flex align-items-center gap-2 me-lg-2 enlace-menu" aria-current="page" href="#">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 1C5.9 1 1 5.9 1 12s4.9 11 11 11 11-4.9 11-11S18.1 1 12 1zm8 11c0 .7-.1 1.4-.3 2-.6-1.5-1.6-3.1-3-4.7l1.8-1.8c1 1.3 1.5 2.8 1.5 4.5zM6.5 6.5c1.3 0 3.6.8 6 2.9l-3.2 3.2C7.1 9.8 6.5 7.5 6.5 6.5zm8.1 5c2.3 2.7 2.9 5 2.9 6-1.3 0-3.6-.8-6-2.9l3.1-3.1zm1.9-6.1l-1.9 1.9c-1.6-1.4-3.2-2.4-4.7-3 .7-.2 1.3-.3 2-.3 1.8 0 3.3.5 4.6 1.4zM4 12c0-.7.1-1.4.3-2 .6 1.5 1.6 3.1 3 4.7l-1.8 1.8C4.5 15.2 4 13.7 4 12zm3.5 6.6l1.9-1.9c1.6 1.4 3.2 2.4 4.7 3-.7.2-1.3.3-2 .3-1.8 0-3.3-.5-4.6-1.4z" fill="currentColor"></path>
+                            </svg>
+                             ES-ES
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white d-flex align-items-center gap-2 enlace-menu" href="#">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.66671 3C0.930328 3 0.333374 2.40305 0.333374 1.66667C0.333374 0.930286 0.930328 0.333333 1.66671 0.333333C2.40309 0.333333 3.00004 0.930287 3.00004 1.66667C3.00004 2.40305 2.40309 3 1.66671 3ZM7.00004 3C6.26366 3 5.66671 2.40305 5.66671 1.66667C5.66671 0.930287 6.26366 0.333333 7.00004 0.333333C7.73642 0.333333 8.33337 0.930287 8.33337 1.66667C8.33337 2.40305 7.73642 3 7.00004 3ZM12.3334 3C11.597 3 11 2.40305 11 1.66667C11 0.930287 11.597 0.333333 12.3334 0.333333C13.0698 0.333333 13.6667 0.930287 13.6667 1.66667C13.6667 2.40305 13.0698 3 12.3334 3ZM1.66671 8.33333C0.930328 8.33333 0.333374 7.73638 0.333374 7C0.333374 6.26362 0.930328 5.66667 1.66671 5.66667C2.40309 5.66667 3.00004 6.26362 3.00004 7C3.00004 7.73638 2.40309 8.33333 1.66671 8.33333ZM7.00004 8.33333C6.26366 8.33333 5.66671 7.73638 5.66671 7C5.66671 6.26362 6.26366 5.66667 7.00004 5.66667C7.73642 5.66667 8.33337 6.26362 8.33337 7C8.33337 7.73638 7.73642 8.33333 7.00004 8.33333ZM12.3334 8.33333C11.597 8.33333 11 7.73638 11 7C11 6.26362 11.597 5.66667 12.3334 5.66667C13.0698 5.66667 13.6667 6.26362 13.6667 7C13.6667 7.73638 13.0698 8.33333 12.3334 8.33333ZM0.333374 12.3333C0.333374 13.0697 0.930328 13.6667 1.66671 13.6667C2.40309 13.6667 3.00004 13.0697 3.00004 12.3333C3.00004 11.597 2.40309 11 1.66671 11C0.930328 11 0.333374 11.597 0.333374 12.3333ZM5.66671 12.3333C5.66671 13.0697 6.26366 13.6667 7.00004 13.6667C7.73642 13.6667 8.33337 13.0697 8.33337 12.3333C8.33337 11.597 7.73642 11 7.00004 11C6.26366 11 5.66671 11.597 5.66671 12.3333ZM11 12.3333C11 13.0697 11.597 13.6667 12.3334 13.6667C13.0698 13.6667 13.6667 13.0697 13.6667 12.3333C13.6667 11.597 13.0698 11 12.3334 11C11.597 11 11 11.597 11 12.3333Z" fill="white"></path></svg>
+                            Productos
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Registrarse e iniciar sesión -->
+    <div class="collapse" id="collapseLogin">
+        <div class="text-end">
+            <a class="d-inline-block pt-4 pe-5" data-bs-toggle="collapse" href="#collapseLogin" role="button" aria-expanded="false" aria-controls="collapseLogin">
+                <i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
+                </i>
+            </a>
+        </div>
+        <div class="row padding-lateral collapse--menu align-items-center">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="card border-0">
+                    <div class="card-body d-flex align-items-center gap-3 pb-5 border-bottom border-dark">
+                        <h2 class="card-title">Iniciar sesión para conducir y hacer entregas</h2>
+                        <i>
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M22.2 12l-6.5 9h-3.5l5.5-7.5H2v-3h15.7L12.2 3h3.5l6.5 9z" fill="black"></path></svg>
+                        </i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card border-0">
+                    <div class="card-body d-flex align-items-center gap-3 pb-5 border-bottom border-dark">
+                        <h2 class="card-title">Iniciar sesión para viajar</h2>
+                        <i>
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M22.2 12l-6.5 9h-3.5l5.5-7.5H2v-3h15.7L12.2 3h3.5l6.5 9z" fill="black"></path></svg>
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="collapse" id="collapseRegister">
+        <div class="text-end">
+            <a class="d-inline-block pt-4 pe-5" data-bs-toggle="collapse" href="#collapseRegister" role="button" aria-expanded="false" aria-controls="collapseRegister">
+                <i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
+                </i>
+            </a>
+        </div>
+        <div class="row padding-lateral collapse--menu align-items-center">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="card border-0">
+                    <div class="card-body d-flex align-items-center gap-3 pb-5 border-bottom border-dark">
+                        <h2 class="card-title">Registrate para conducir y hacer entregas</h2>
+                        <i>
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M22.2 12l-6.5 9h-3.5l5.5-7.5H2v-3h15.7L12.2 3h3.5l6.5 9z" fill="black"></path></svg>
+                        </i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card border-0">
+                    <div class="card-body d-flex align-items-center gap-3 pb-5 border-bottom border-dark">
+                        <h2 class="card-title">Crear una cuenta de pasajero</h2>
+                        <i>
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M22.2 12l-6.5 9h-3.5l5.5-7.5H2v-3h15.7L12.2 3h3.5l6.5 9z" fill="black"></path></svg>
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <div class="bg-secondary padding-lateral--cabecera pt-lg-5 pb-lg-5 cabecera">
+        <div class="d-flex flex-column flex-lg-row">
+            <div class="col">
+                <nav class="bg-white">
+                    <div class="nav nav-tabs justify-content-lg-evenly" id="nav-tab" role="tablist">
+                        <button class="nav-link active d-flex flex-column align-items-center justify-content-center link-menu-cabezera text-body" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                            <img src="img/Earn-filled.svg" alt="icono grafico de barras">
+                            Conduce o haz entregas
+                        </button>
+                        <button class="nav-link d-flex flex-column align-items-center justify-content-center link-menu-cabezera text-body" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                            <img src="img/restaurant-outlined.svg" alt="icono grafico de barras">
+                            Come
+                        </button>
+                        <button class="nav-link d-flex flex-column align-items-center justify-content-center link-menu-cabezera text-body" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                            <img src="img/car-front-outlined.svg" alt="icono grafico de barras">
+                            Viaja
+                        </button>
+                    </div>
+                </nav>
+                <div class="tab-content bg-white p-5" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                        <h2 class="titulo-1 fw-bold text-black">Ocupa el asiento del conductor y gana dinero</h2>
+                        <p class="mt-4 mb-4">Conduce en la plataforma con la red más grande de usuarios activos.</p>
+                        <button class="d-block mb-4 btn btn-primary bg-black text-white border-0 ps-3 pe-3 pt-2 pb-2 fw-semibold boton">Registrate para conducir</button>
+                        <a class="text-decoration-none text-body pb-2 border-bottom border-secondary-light-subtle" href="">Mas información sobre como conducir y hacer entregas</a>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                        <h2 class="titulo-1 fw-bold text-black">Descubre comida deliciosa</h2>
+                        <p class="mt-4 mb-4">Pide comida a domicilio en tus restaurantes favoritos.</p>
+                        <button class="d-block mb-4 btn btn-primary bg-black text-white border-0 ps-3 pe-3 pt-2 pb-2 fw-semibold boton">Haz tu pedido ahora</button>
+                        <a class="text-decoration-none text-body pb-2 border-bottom border-secondary-light-subtle" href="">¿Tienes algún restaurante? Asociate con Uber Eats</a>
+                    </div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                        <h2 class="titulo-1 fw-bold text-black">Solicita un viaje ahora</h2>
+                        <input class="d-block mt-4 mb-4 pt-2 pb-2 ps-3 pe-3 border-0 eliminar-borde-focus bg-body-secondary" type="text" name="" id="" placeholder="Introduce la ubicación de recogida">
+                        <input class="d-block mt-4 mb-4 pt-2 pb-2 ps-3 pe-3 border-0 eliminar-borde-focus bg-body-secondary" type="text" name="" id="" placeholder="Introduce tu destino">
+                        <button class="d-inline-block mb-4 btn btn-primary bg-black text-white border-0 ps-3 pe-3 pt-2 pb-2 me-3 fw-semibold boton">Solicitar ahora</button>
+                        <button class="d-inline-block mb-4 btn btn-primary bg-body-secondary text-black border-0 ps-3 pe-3 pt-2 pb-2 fw-semibold boton--fondo-secondary">Programar para más tarde</button>
+                        <br>
+                        <a class="text-decoration-none text-body pb-2 border-bottom border-secondary-light-subtle" href="">¿Tienes algún restaurante? Asociate con Uber Eats</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col segunda-col-cabecera">sf</div>
+        </div>
+    </div>
+
+    <!-- Sección para empresas -->
+    <div class="text-bg-dark empresas d-flex align-items-center mb-5">
+        <div class="padding-lateral">
+            <h2 class="card-title text-black fw-bold mb-3">Uber para Empresas</h2>
+            <p class="card-text text-black mb-4">Revoluciona los desplazamientos y cómo comen tus empleados.</p>
+            <button class="cart-text d-block btn btn-primary bg-black text-white border-0 ps-3 pe-3 pt-2 pb-2 fw-semibold boton">Aberigua como</button>
+        </div>
+    </div>
+
+    <!-- Sección seguridad -->
+    <div class="padding-lateral pt-4 mb-5">
+        <h2 class="fw-bold mb-5 ancho-maximo-titulo">Nos centramos en la seguridad vayas donde vayas</h2>
+
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card border-0">
+                <img src="img/Safety_Home_Img2x.webp" class="card-img-top" alt="hombre conduciendo un coche">
+                <div class="card-body">
+                    <h5 class="card-title">Nuestro compromiso con tu seguridad</h5>
+                    <p class="card-text">Con cada función de seguridad y cada estándar de nuestras directrices de la comunidad, nos comprometemos a ayudar a crear un entorno seguro para nuestros usuarios.</p>
+
+                    <a class="text-decoration-none text-body pb-2 mb-2 d-inline-block border-bottom border-secondary-light-subtle" href="">Más información sobre las directrices de la comunidad</a>
+                    <br>
+                    <a class="text-decoration-none text-body pb-2 d-inline-block border-bottom border-secondary-light-subtle" href="">Ver todas las funciones de seguridad</a>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0">
+                <img src="img/Cities_Home_Img2x.webp" class="card-img-top" alt="vista de agila de un cruce">
+                <div class="card-body">
+                    <h5 class="card-title">Hemos puesto en movimiento más de 10 000 ciudades</h5>
+                    <p class="card-text">La app está disponible en miles de ciudades de todo el mundo, así que podrás solicitar un viaje aunque estés lejos de casa.</p>
+                    <a class="text-decoration-none text-body pb-2 border-bottom border-secondary-light-subtle" href="">Ver todas las ciudades</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección info -->
+    <div class="row row-cols-1 row-cols-md-3 g-4 padding-lateral pt-5 mb-5">
+        <div class="col">
+            <div class="card border-0">
+            <img src="img/person-multiple-outlined.svg" class="card-img-top img-info ms-3" alt="icono de usuarios">
+            <div class="card-body">
+                <h5 class="card-title">Conócenos</h5>
+                <p class="card-text">Descubre cómo fueron nuestros comienzos, qué nos motiva y cómo trabajamos para reinventar la forma en la que se mueve el mundo.</p>
+                <a class="text-decoration-none text-body pb-2 border-bottom border-secondary-light-subtle" href="">Ver todas las funciones de seguridad</a>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card border-0">
+            <img src="img/document-outlined.svg" class="card-img-top img-info ms-3" alt="icono de documento">
+            <div class="card-body">
+                <h5 class="card-title">Newsroom</h5>
+                <p class="card-text">Mantente al tanto de los anuncios sobre nuestros últimos lanzamientos, iniciativas y colaboraciones.</p>
+                <a class="text-decoration-none text-body pb-2 border-bottom border-secondary-light-subtle" href="">Ver todas las funciones de seguridad</a>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card border-0">
+            <img src="img/home-outlined.svg" class="card-img-top img-info ms-3" alt="icono de casa">
+            <div class="card-body">
+                <h5 class="card-title">Ciudadanía Global</h5>
+                <p class="card-text">Lee acerca de nuestro compromiso para lograr un impacto positivo en las ciudades en las que operamos.</p>
+                <a class="text-decoration-none text-body pb-2 border-bottom border-secondary-light-subtle" href="">Ver todas las funciones de seguridad</a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-black text-muted pt-5">
+        <section class="d-flex justify-content-center justify-content-lg-between pt-4 pb-4 padding-lateral border-bottom">
+            <!-- Logo -->
+            <div class="me-5 d-none d-lg-block">
+                <span class="text-white">Uber</span>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-facebook-f">
+                        <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"><title>facebook</title><path d="M21.79 1H2.21C1.54 1 1 1.54 1 2.21v19.57c0 .68.54 1.22 1.21 1.22h10.54v-8.51H9.9v-3.33h2.86V8.71c0-2.84 1.74-4.39 4.27-4.39.85 0 1.71.04 2.56.13v2.97h-1.75c-1.38 0-1.65.65-1.65 1.62v2.12h3.3l-.43 3.33h-2.89V23h5.61c.67 0 1.21-.54 1.21-1.21V2.21C23 1.54 22.46 1 21.79 1z" fill="white"></path></svg>
+                    </i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-twitter">
+                        <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"><title>twitter</title><path d="M23 5.13c-.81.36-1.69.61-2.61.72.94-.56 1.66-1.45 2-2.51-.88.52-1.85.9-2.89 1.1A4.558 4.558 0 0016.18 3a4.543 4.543 0 00-4.42 5.58c-3.78-.19-7.13-2-9.37-4.75-.39.67-.62 1.45-.62 2.28 0 1.58.8 2.97 2.02 3.78-.75-.02-1.45-.23-2.06-.57v.06c0 2.2 1.57 4.04 3.65 4.45-.38.12-.78.17-1.19.17-.29 0-.58-.03-.85-.08a4.557 4.557 0 004.25 3.16 9.112 9.112 0 01-5.64 1.95c-.37 0-.73-.02-1.08-.06 2.01 1.29 4.4 2.04 6.97 2.04 8.36 0 12.93-6.92 12.93-12.93 0-.2 0-.39-.01-.59.86-.65 1.63-1.45 2.24-2.36z" fill="white"></path></svg>
+                    </i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-google">
+                        <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"><title>youtube</title><path d="M23 12s0-3.85-.46-5.58c-.25-.95-1-1.7-1.94-1.96C18.88 4 12 4 12 4s-6.88 0-8.6.46c-.95.25-1.69 1.01-1.94 1.96C1 8.15 1 12 1 12s.04 3.85.5 5.58c.25.95 1 1.7 1.95 1.96 1.71.46 8.59.46 8.59.46s6.88 0 8.6-.46c.95-.25 1.69-1.01 1.94-1.96.46-1.73.42-5.58.42-5.58zm-13 3.27V8.73L15.5 12 10 15.27z" fill="white"></path></svg>
+                    </i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-linkedin">
+                        <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"><title>linkedin</title><path d="M21.37 1H2.62C1.73 1 1 1.71 1 2.58v18.83c0 .88.73 1.59 1.62 1.59h18.75c.9 0 1.63-.71 1.63-1.59V2.58C23 1.71 22.27 1 21.37 1zM7.53 19.75H4.26V9.25h3.27v10.5zM5.89 7.81C4.85 7.81 4 6.96 4 5.92s.84-1.89 1.89-1.89c1.04 0 1.89.85 1.89 1.89.01 1.04-.84 1.89-1.89 1.89zm13.86 11.94h-3.26v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.33-1.96 2.7v5.19H9.57V9.26h3.13v1.43h.04c.44-.83 1.5-1.7 3.09-1.7 3.3 0 3.91 2.17 3.91 5v5.76h.01z" fill="white"></path></svg>
+                    </i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-instagram">
+                        <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none"><title>instagram</title><g fill="white"><path d="M21.15 2.85C19.05.74 16.23 1 12 1 8.04 1 5 .69 2.85 2.85.74 4.95 1 7.77 1 12c0 3.95-.31 7 1.85 9.15C4.95 23.26 7.77 23 12 23c3.96 0 7 .31 9.15-1.85C23.25 19.05 23 16.23 23 12c0-4.31.24-7.07-1.85-9.15zm-1.4 16.9c-1.37 1.37-3.18 1.27-7.75 1.27-4.29 0-6.34.15-7.75-1.27-1.44-1.44-1.27-3.51-1.27-7.75 0-4.23-.15-6.33 1.27-7.75C5.66 2.84 7.6 2.98 12 2.98c4.23 0 6.33-.15 7.75 1.27 1.38 1.38 1.27 3.22 1.27 7.75 0 4.24.15 6.34-1.27 7.75z"></path><path d="M12 6.35a5.65 5.65 0 10.001 11.301A5.65 5.65 0 0012 6.35zm0 9.32c-2.02 0-3.67-1.64-3.67-3.67 0-2.03 1.64-3.67 3.67-3.67 2.03 0 3.67 1.64 3.67 3.67 0 2.02-1.65 3.67-3.67 3.67zM17.87 4.81c-.73 0-1.32.59-1.32 1.32 0 .73.59 1.32 1.32 1.32.73 0 1.32-.59 1.32-1.32 0-.73-.59-1.32-1.32-1.32z"></path></g></svg>
+                    </i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3 text-start text-white">
+                <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Empresa</h6>
+                    <p><a href="#" class="text-reset text-decoration-none">Conócenos</a></p>
+                    <p><a href="#" class="text-reset text-decoration-none">Nuestras ofertas</a></p>
+                    <p><a href="#" class="text-reset text-decoration-none">Newsroon</a></p>
+                    <p><a href="#" class="text-reset text-decoration-none">Inversores</a></p>
+                    <p><a href="#" class="text-reset text-decoration-none">Blog</a></p>
+                    <p><a href="#" class="text-reset text-decoration-none">Únete al equipo</a></p>
+                    <p><a href="#" class="text-reset text-decoration-none">AI</a></p>
+                    <p><a href="#" class="text-reset text-decoration-none">Tarjetas regalo</a></p>
+                </div>
+
+                <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Productos</h6>
+                    <p><a href="#" class="text-reset text-decoration-none">Viaja</a></p>
+                    <p><a href="#" class="text-reset text-decoration-none">Conduce</a></p>
+                    <p><a href="#" class="text-reset text-decoration-none">Hacer entregas</a></p>
+                    <p><a href="#" class="text-reset text-decoration-none">Come</a></p>
+                    <p><a href="#" class="text-reset text-decoration-none">Uber para Empresas</a></p>
+                    <p><a href="#" class="text-reset text-decoration-none">Uber Freight</a></p>
+                </div>
+
+                <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Ciudadanía global</h6>
+                    <p><a href="#" class="text-reset text-decoration-none">Seguridad</a></p>
+                    <p><a href="#" class="text-reset text-decoration-none">Diversidad e includión</a></p>
+                </div>
+
+                <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Viajar</h6>
+                    <p><a href="#" class="text-reset text-decoration-none">Aeropuertos</a></p>
+                    <p><a href="#" class="text-reset text-decoration-none">Ciudades</a></p>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <div class="text-center p-4 text-white">
+            © 2023 Uber Technologies Inc.
+        </div>
+    </footer>
+</body>
+</html>
